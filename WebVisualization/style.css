@@ -1,63 +1,108 @@
-/* This is From A Class Activity: Used for reference. 
-
-/* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
 body {
-    background: #ffe6f2;
+    font-family: sans-serif;
+    font-size: 1.1em;
+    background-color:#eee;
   }
   
-  h1 {
-    font-size: 40px;
+  .navbar-light .navbar-brand {
+    color: white;
+  }
+  
+  .navbar {
+    background-color: white;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .navbar-brand {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: rgb(20, 150, 150);
+    padding: 10px;
+    margin-left: 5%;
+  }
+  
+  .navbar-collapse {
+    position: absolute;
+    right: 5%;
+    font-size: small;
+  }
+  
+  .nav-item {
     font-weight: bold;
   }
   
-  h3 {
-    font-size: 25px;
+  .content {
+    width:90%;
+    margin: 20px auto;
+    padding:1em;
+  }
+    
+  .buttons {
+    margin-bottom: .5em;
   }
   
-  /* Giving our navbar some padding and a background color */
-  .navbar {
-    padding: 10px;
-    background: #ffe6f2;
-    text-align: center
+  .text-left {
+    text-align: left;
+    color: rgb(20, 150, 150);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
   }
   
-  /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
-  .navbar li {
-    display: inline-block;
-    padding: 20px;
-    margin-right: 10px;
-    margin-left: 10px;
-    cursor: pointer;
-    background: #c49282;
-    border-radius: 5px;
+  .text-center {
+    color: rgb(20, 150, 150);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
   }
   
-  /* Getting rid of the default link styles here */
-  .navbar li a {
-    color: #000;
-    text-decoration: none;
+  p:not(.intro) {
+    text-align: justify;
+    color: #7e7e7e;
   }
   
-  /* Styling the header, giving it a height, a background color, and some top padding */
-  .header {
-    height: 200px;
-    padding-top: 20px;
-    background: #ffe6cc;
-    display: block;
+  .thumbnail {
+    width:50%;
   }
   
-  /* Centering our h1 tag inside our header, giving it a little padding, removing its margin */
-  .header h1 {
-    padding: 50px;
-    margin: 0;
-    color: #000;
-    text-align: center;
+  .main-image {      
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+      float: left;
   }
   
-  /* Giving the .post element margin on 3 sides */
-  .post {
-    margin-top: 50px;
-    margin-right: 100px;
-    margin-left: 100px;
+  .col-md-8 {
+    background-color: white;
   }
   
+  .col-sm-12,.col-md-4 {
+    background-color: white;
+  }
+  
+  div.col-sm-12.col-md-12 div.col-lg-6.col-sm-12 img {
+    width: 100%;
+  }
+  
+  .imagetiles {
+    background-color: white;
+  }
+  div.imagetiles div.col-lg-6.col-sm-12 img {
+    width: 100%;
+  }
+  
+  div.col-sm-12.col-md-12 p {
+    color: black;
+    font-size: medium;
+  }
+  
+  .panel-body:hover {
+    border-color: blueviolet;
+    border size: 50px;
+  }
+  
+  @include media-breakpoint-down(md) {
+    .col-md-8 {
+      display: block;
+    }
+  }
